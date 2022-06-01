@@ -323,6 +323,26 @@ let harryPotter = new Wizard(
 //Code Here
 
 
+class Phone {
+  constructor(brand, model, storage, color, price) {
+    this.brand = brand;
+    this.model = model;
+    this.storage = storage;
+    this.color = color;
+    this.price = price;
+    this.sold = false;
+  }
+
+  sell() {
+    this.sold = true;
+    return `${this.brand} ${this.model} has been sold.`;
+  }
+
+  changePrice(newPrice) {
+    this.price = newPrice;
+  }
+}
+
 /*
     Next make three new phone instances using your class.
     Send in values of your choice. They should match these data types:
@@ -335,6 +355,36 @@ let harryPotter = new Wizard(
 
 //Code Here
 
+let phone1 = new Phone (
+  "Apple",
+  "iPhone",
+  256,
+  "Space Grey",
+  8000
+)
+// console.log(phone1);
+
+
+let phone2 = new Phone (
+  "Samsung",
+  "Galaxy",
+  100,
+  "Black",
+  600
+)
+// console.log(phone2);
+
+
+let phone3 = new Phone (
+  "Motorola",
+  "Razor",
+  1,
+  "Pink",
+  50
+)
+// console.log(phone3);
+
+
 /* 
   Call the changePrice function on one of your phones, 
   don't forget to pass in a new price 
@@ -345,6 +395,10 @@ let harryPotter = new Wizard(
 //Code Here 
 
 
+phone1.changePrice(1200);
+// console.log(phone1);
+
+
 /*
   Now call the sell method on one of your other phone objects
 
@@ -352,6 +406,10 @@ let harryPotter = new Wizard(
 */
 
 //Code Here 
+
+
+phone3.sell(true);
+// console.log(phone3);
 
 
 //////////////////////////// PROBLEM 15 ////////////////////////////
