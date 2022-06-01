@@ -137,12 +137,12 @@ let { color, make, model, year } = carDetails;
 
 function greeting(obj) {
   //Code Here
-  
+
 
   let firstName = obj.firstName;
   let lastName = obj.lastName;
   let title = obj.title;
-  
+
 
   // Do not edit the code below.
   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
@@ -163,6 +163,18 @@ function greeting(obj) {
 
 //Code Here
 
+
+function totalPopulation(obj) {
+  let { utah, california, texas, arizona } = obj;
+
+  // console.log("ut", utah);
+  // console.log("ca", california);
+  // console.log("tz", texas);
+  // console.log("az", arizona);
+
+  return utah + california + texas + arizona;
+}
+// console.log(totalPopulation({ utah: 3, california: 4, texas: 5, arizona: 6 }));
 
 
 //////////////////////////// PROBLEM 9 ////////////////////////////
