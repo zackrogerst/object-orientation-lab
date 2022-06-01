@@ -7,6 +7,12 @@
 //Code here
 
 
+const me = {
+  name: "Zack",
+  age: "25",
+}
+// console.log(me);
+
 
 //////////////////////////// PROBLEM 2 ////////////////////////////
 
