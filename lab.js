@@ -32,7 +32,7 @@ const dog = {
 }
 
 let finn = dog;
-console.log(finn);
+// console.log(finn);
 
 
 //////////////////////////// PROBLEM 3 ////////////////////////////
@@ -41,7 +41,7 @@ console.log(finn);
 //Code here
 
 
-
+// console.log(finn.name);
 
 
 //////////////////////////// PROBLEM 4 ////////////////////////////
@@ -49,6 +49,8 @@ console.log(finn);
 
 //Code here
 
+
+// console.log(finn["name"]);
 
 
 //////////////////////////// PROBLEM 5 ////////////////////////////
