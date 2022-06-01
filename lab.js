@@ -80,8 +80,8 @@ let favoriteThings = {
 //Code here
 
 
-favoriteThings.car = "Toyota";
-favoriteThings["show"] = "Adventure Time";
+favoriteThings.car = "Toyota";               //key -dot notation
+favoriteThings["show"] = "Adventure Time";   //key -bracket notation
 // console.log(favoriteThings);
 
 
@@ -218,6 +218,15 @@ var user = {
 */
 
 //Code Here
+
+
+// user["name"] = "Bryan G. Smith";
+user.name = "Bryan G. Smith";
+
+user["email"] = "bryan.smith@devmounta.in";
+// user.email = "bryan.smith@devmounta.in";
+
+console.log(user);
 
 
 //////////////////////////// PROBLEM 11 ////////////////////////////
