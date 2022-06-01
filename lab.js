@@ -190,6 +190,14 @@ function totalPopulation(obj) {
 //Code Here
 
 
+function ingredients(obj) {
+  let { carb, fat, protien } = obj;
+  let ingredientsList = [];
+  ingredientsList.push(carb, fat, protien);
+  return ingredientsList;
+}
+// console.log(ingredients({ carb: "potato", fat: "beef", protien: "egg" }));
+
 
 //////////////////////////// PROBLEM 10 ////////////////////////////
 // Do not edit the code below.
