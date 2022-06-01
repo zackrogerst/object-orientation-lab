@@ -264,7 +264,7 @@ let myCat = {
   color: "green"
 }
 
-console.log(myCat)
+// console.log(myCat);
 
 
 //////////////////////////// PROBLEM 13 ////////////////////////////
@@ -276,6 +276,26 @@ console.log(myCat)
 */
 
 //Code here
+
+class Wizard {
+  constructor(name, age, favoriteSpell) {
+    this.name = name;
+    this.age = age;
+    this.favoriteSpell = favoriteSpell;
+  }
+
+  castSpell() {
+    return `${this.name} has cast ${this.favoriteSpell}`;
+  }
+}
+
+let harryPotter = new Wizard(
+  "Harry Potter",
+  16,
+  "Expelliamus"
+)
+
+// console.log(harryPotter.castSpell());
 
 //////////////////////////// PROBLEM 14 ////////////////////////////
 /*
