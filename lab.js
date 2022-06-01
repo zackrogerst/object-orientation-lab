@@ -137,12 +137,18 @@ let { color, make, model, year } = carDetails;
 
 function greeting(obj) {
   //Code Here
+  
+
+  let firstName = obj.firstName;
+  let lastName = obj.lastName;
+  let title = obj.title;
+  
 
   // Do not edit the code below.
   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
   // Do not edit the code above.
 }
-
+// console.log(greeting({firstName: "Zack", lastName: "Rogers", title: "Mr."}));
 
 
 //////////////////////////// PROBLEM 8 ////////////////////////////
