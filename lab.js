@@ -355,7 +355,7 @@ class Phone {
 
 //Code Here
 
-let phone1 = new Phone (
+let phone1 = new Phone(
   "Apple",
   "iPhone",
   256,
@@ -365,7 +365,7 @@ let phone1 = new Phone (
 // console.log(phone1);
 
 
-let phone2 = new Phone (
+let phone2 = new Phone(
   "Samsung",
   "Galaxy",
   100,
@@ -375,7 +375,7 @@ let phone2 = new Phone (
 // console.log(phone2);
 
 
-let phone3 = new Phone (
+let phone3 = new Phone(
   "Motorola",
   "Razor",
   1,
@@ -431,7 +431,7 @@ const colors = {
 
 //Code Here 
 
-let colorsCopy = {...colors}
+let colorsCopy = { ...colors }
 // console.log(colorsCopy);
 
 
@@ -461,7 +461,7 @@ const shippingInfo = {
 
 //Code Here
 
-let helensInfo = {...contactInfo, ...shippingInfo};
+let helensInfo = { ...contactInfo, ...shippingInfo };
 // console.log(helensInfo);
 
 //Print helensInfo to see what it looks like, there should be no repeating properties.
@@ -482,11 +482,32 @@ let helensInfo = {...contactInfo, ...shippingInfo};
 //Code Here 
 
 
+class Vehicle {
+  constructor(capacity, color, mileage) {
+    this.capacity = capacity;
+    this.color = color;
+    this.mileage = mileage;
+  }
+
+  move(miles) {
+    this.mileage += miles;
+    return this.miles;
+  }
+}
+
 /*
   Create a vehicle using your new class and save it to a variable called myFirstVehicle
 */
 
 //Code Here
+
+
+let myFirstVehicle = new Vehicle(
+  5,
+  "Blue",
+  12000
+)
+// console.log(myFirstVehicle);
 
 
 /*
@@ -499,15 +520,36 @@ let helensInfo = {...contactInfo, ...shippingInfo};
 
 //Code Here
 
+
+class Motorcycle extends Vehicle {
+  constructor(capacity, color, mileage, make, isCool) {
+    super(capacity, color, mileage);
+    
+    this.make = make;
+    this.isCool = isCool;
+  }
+}
+
+
 /*
   Create a Motorcycle using your new class and save it to a variable called myFirstMotorcycle
 */
 
 //Code Here 
 
+
+let myFirstMotorcycle = new Motorcycle (865, "red and black", 3200, "triumph", true);
+// console.log(myFirstMotorcycle);
+
+
 /*
   Call the move function on myFirstMotorcycle (don't forget the parameter)
 */
+
+
+myFirstMotorcycle.move(1000);
+// console.log(myFirstMotorcycle);
+
 
 /*
   Let's make another class based off of Vehicle.
@@ -528,6 +570,30 @@ let helensInfo = {...contactInfo, ...shippingInfo};
 //Code Here
 
 
+class Boat extends Vehicle {
+  constructor(capacity, color, mileage, name, type, isSeaWorthy) {
+    super(capacity, color, mileage);
+    
+    this.name = name;
+    this.type = type;
+    this.isSeaWorthy = isSeaWorthy;
+  }
+
+  checkSeaWorthiness() {
+    if (this.isSeaWorthy) {
+      return "Is Sea Worthy";
+    } else {
+      return "Is Not Sea Worthy";
+    }
+  }
+
+  performMaintenance() {
+    this.isSeaWorthy = true;
+    return "Maintenace Performed"
+  }
+}
+
+
 /*
   Create a new boat using your class. You can choose whatever values you like for all the
   properties except isSeaworthy -- make that one false. Call your variable myFirstBoat.
@@ -535,11 +601,20 @@ let helensInfo = {...contactInfo, ...shippingInfo};
 
 //Code Here
 
+
+let myFirstBoat = new Boat (12000, "white", 999999, "Bertha", "Shipping", false);
+// console.log(myFirstBoat);
+
+
 /*
   Call the checkSeaworthiness method on your new boat
 */
 
 //Code Here
+
+
+// console.log(myFirstBoat.checkSeaWorthiness());
+
 
 /*
   Now run the performMaintenance method on your boat
@@ -547,8 +622,14 @@ let helensInfo = {...contactInfo, ...shippingInfo};
 
 //Code Here 
 
+
+// console.log(myFirstBoat.performMaintenance());
+
+
 /*
   Check the seaworthiness once more (you should be ready for the water!)
 */
 
 //Code Here
+
+// console.log(myFirstBoat.checkSeaWorthiness());
