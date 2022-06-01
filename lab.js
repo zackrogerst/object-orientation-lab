@@ -120,6 +120,12 @@ var carDetails = {
 //Code Here
 
 
+let { color, make, model, year } = carDetails;
+// console.log(color);
+// console.log(make);
+// console.log(model);
+// console.log(year);
+
 
 //////////////////////////// PROBLEM 7 ////////////////////////////
 
