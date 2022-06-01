@@ -93,6 +93,15 @@ favoriteThings["show"] = "Adventure Time";
 //Code here
 
 
+favoriteThings.food = "Chicken Nuggets";
+// favoriteThings["food"] = "Chicken Nuggets";
+
+favoriteThings.book = "Harry Potter";
+// favoriteThings["book"] = "Harry Potter";
+
+// console.log(favoriteThings);
+
+
 //////////////////////////// PROBLEM 6 ////////////////////////////
 
 // Do not edit the code below.
