@@ -9,7 +9,7 @@
 
 const me = {
   name: "Zack",
-  age: "25"
+  age: 25
 }
 // console.log(me);
 
@@ -62,11 +62,27 @@ let finn = dog;
 //Code here
 
 
+let favoriteThings = {
+  band: "Led Zepplin",
+  food: "Chicken",
+  person: "Me",
+  book: "Neuromancer",
+  movie: "Tron",
+  holiday: "Independance Day"
+}
+// console.log(favoriteThings);
+
 /*
-  After you've made your object, use bracket or dot notation to add another key named 'car' with the value being your favorite car and then another key named 'show' with the value being your favorite show.
+  After you've made your object, use bracket or dot notation to add another key named 'car' 
+  with the value being your favorite car and then another key named 'show' with the value being your favorite show.
 */
 
 //Code here
+
+
+favoriteThings.car = "Toyota";
+favoriteThings["show"] = "Adventure Time";
+// console.log(favoriteThings);
 
 
 /*
