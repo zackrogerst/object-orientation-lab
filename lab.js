@@ -226,7 +226,7 @@ user.name = "Bryan G. Smith";
 user["email"] = "bryan.smith@devmounta.in";
 // user.email = "bryan.smith@devmounta.in";
 
-console.log(user);
+// console.log(user);
 
 
 //////////////////////////// PROBLEM 11 ////////////////////////////
@@ -236,6 +236,8 @@ console.log(user);
 
 //Code Here
 
+delete user.age;
+// console.log(user);
 
 //////////////////////////// PROBLEM 12 ////////////////////////////
 /*
