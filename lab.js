@@ -31,14 +31,16 @@ const dog = {
   goodBoy: true
 }
 
-let finnGood = dog.goodBoy;
-// console.log("Finn is good boi:", finnGood);
+let finn = dog;
+console.log(finn);
 
 
 //////////////////////////// PROBLEM 3 ////////////////////////////
 /* Print out the name of the dog you created in problem 2 using dot-notation. */
 
 //Code here
+
+
 
 
 
